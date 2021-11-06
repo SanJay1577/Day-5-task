@@ -1,0 +1,99 @@
+//Anonymous function
+
+//Odd numbers in an array
+let arr = [2,3,4,5,6];
+// function statement. 
+let ans = function(){
+  for (let i = 0; i<arr.length; i++){
+// finding the odd numbers in the function. 
+  if(arr[i]%2 != 0){
+    console.log(arr[i]);
+  }
+}
+};
+ans();
+
+//converting string to capital
+let str = "Hi my name is sanjay";
+//function statement
+let TiltCaps= function(){
+    //logic for the problem.
+  str = str.toLowerCase().split("");
+
+for(let i = 0; i<str.length; i++){
+
+  str[i] = str[i].charAt(0).toUpperCase();
+}
+ console.log(str.join(""));
+ };
+TiltCaps();
+
+//Adding all the numbers in array:
+let arr1 = [10,20,30,40];
+let value = 0;
+//logic for array
+let sum = function(){
+    for(let i =0; i<arr1.length; i++){
+       value += arr1[i];
+}
+ console.log(value);
+};
+sum();
+
+//Finding the prime number in an given array 
+let arr2 = [1,2,3,4,5,6,9,12,11];
+let PrimeNumber = function(){
+  // logic of the problem.
+    for(let i =0; i<arr2.length; i++){
+      let value = arr2[i]/2;
+      value = value%1;
+      if(value!=0){
+          console.log(arr2[i]);
+      }
+    }
+
+};
+
+PrimeNumber();
+
+//Median of a given two array
+
+let arr3 = [2,8,12,9];
+let arr4 = [1,5,7,13,15];
+arr3 = arr3.concat(arr4);
+//function and logic for given problem
+let median = function(){arr3.sort((a,b)=>{return a-b});
+let j = Math.ceil(arr3.length/2);
+for(let i=1; i<arr3.length; i++){
+}
+console.log(arr3[j-1]);
+};
+median();
+
+//Remove duplicate in an array:
+let val = [1, 2, 3, 4, 5, 5, 6, 7, 7, 8, 5];
+// function and logic for removing duplicate
+let uniqueChars = function(){
+    val =[...new Set(val)];
+     console.log(val);
+}
+
+uniqueChars();
+
+//Rotation of given array k times:
+
+let givarr = [1,2,3,4,5];
+let k = 3;
+//function for roation
+let rotarr = function(){
+    let last = givarr.pop();
+    givarr.unshift(last);
+     return givarr;
+}
+//loop for k times
+while(k!=0){
+    k--;
+    rotarr()
+}
+console.log(givarr);
+
